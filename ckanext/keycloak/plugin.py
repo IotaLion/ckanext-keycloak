@@ -14,7 +14,7 @@ import logging
 import os
 from six.moves.urllib.parse import urljoin
 from base64 import b64encode, b64decode
-from pyramid import config
+from ckan.common import config
 from keycloak.realm import KeycloakRealm
 
 log = logging.getLogger(__name__)
