@@ -75,7 +75,7 @@ class KeycloakPlugin(plugins.SingletonPlugin):
     plugins.implements(plugins.IConfigurer)
 
     def __init__(self, name=None):
-        self.keycloak_helper = plugins.KeycloakHelper()
+        self.keycloak_helper = KeycloakHelper()
 
     def update_config(self,config):
         return None
