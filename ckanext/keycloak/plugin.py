@@ -8,7 +8,7 @@ import helper
 from ckan import plugins
 from ckan.plugins import toolkit
 from pylons import config
-from urlparse import urlparse
+from urllib import request
 
 import ckan.model as model
 from ckan.lib.helpers import redirect_to as redirect
