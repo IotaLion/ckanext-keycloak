@@ -1,2 +1,2 @@
 python-keycloak-client==0.2.3.
-pylons
+pyramid
