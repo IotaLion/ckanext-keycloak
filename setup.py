@@ -10,7 +10,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='''ckanext-keycloak''',
+    name='''keycloak-alt''',
 
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
@@ -21,11 +21,11 @@ setup(
     long_description=long_description,
 
     # The project's main homepage.
-    url='https://github.com/etri-sodas/ckanext-keycloak',
+    url='https://github.com/IotaLion/ckanext-keycloak-alt.git',
 
     # Author details
-    author='''Chau Nguyen''',
-    author_email='''chau@etri.re.kr''',
+    # author='''Chau Nguyen''',
+    # author_email='''chau@etri.re.kr''',
 
     # Choose your license
     license='AGPL',
@@ -43,7 +43,7 @@ setup(
 
         # Specify the Python versions you support here. In particular, ensure
         # that you indicate whether you support Python 2, Python 3 or both.
-        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3.8',
     ],
 
 
@@ -80,9 +80,9 @@ setup(
     # pip to create the appropriate form of executable for the target platform.
     entry_points='''
         [ckan.plugins]
-        keycloak=ckanext.keycloak.plugin:KeycloakPlugin
+        keycloak-alt=ckanext.keycloak.plugin:KeycloakPlugin
         [paste.paster_command]
-        keycloak=ckanext.keycloak.commands:KeycloakCommand
+        keycloak-alt=ckanext.keycloak.commands:KeycloakCommand
 
         [babel.extractors]
         ckan = ckan.lib.extract:extract_ckan
